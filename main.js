@@ -36,6 +36,12 @@ function my_keydown(e)
 	else {
 		otherkey();
 		document.getElementById("d1").innerHTML="You pressed symbol or other key";
+		console.log("other key");
+	}
+	if ((keyPressed >=48 && keyPressed<=57) ) {
+	numberkey();
+	document.getElementById("d1").innerHTML="You pressed number key";
+	console.log("number key");
 	}
 }
 
